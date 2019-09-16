@@ -1,0 +1,261 @@
+
+namespace org.studentrecord.reportcard
+
+
+import org.studentrecord.record.Record
+
+
+concept StudentDetails{
+  o String registrationNumber
+  o String firstName 
+  o String lastName
+  o String faculty
+  o String enrolledCollege
+}
+
+abstract asset ReportCard identified by reportId {
+  o String reportId
+  -->Record record
+  o StudentDetails studentDetails
+} 
+
+asset FirstSemesterReportCard extends ReportCard{
+
+  o FirstSemesterMarks firstSemesterMarks  
+  o Result result
+
+}
+
+concept FirstSemesterMarks{
+
+  o Integer Engineering_Mathematics_I_Theory_Assesment 
+  o Integer Engineering_Mathematics_I_Theory_Final 
+  o Integer Computer_Programming_Theory_Assesment 
+  o Integer Computer_Programming_Theory_Final 
+  o Integer Computer_Programming_Practical_Assesment 
+  o Integer Engineering_Drawing_I_Practical_Assesment
+  o Integer Engineering_Drawing_I_Practical_Final 
+  o Integer Engineering_Physics_Theory_Assesment 
+  o Integer Engineering_Physics_Theory_Final 
+  o Integer Engineering_Physics_Practical_Assesment 
+  o Integer Engineering_Physics_Practical_Final 
+  o Integer Applied_Mechanics_Theory_Assesment 
+  o Integer Applied_Mechanics_Theory_Final 
+  o Integer Basic_Electrical_Engineering_Theory_Assesment
+  o Integer Basic_Electrical_Engineering_Theory_Final 
+  o Integer Basic_Electrical_Engineering_Practical_Assesment
+}
+
+
+asset SecondSemesterReportCard extends ReportCard{
+  
+  o SecondSemesterMarks secondSemesterMarks
+  o Result result
+
+}
+
+concept SecondSemesterMarks {
+  o Integer Engineering_Mathematics_II_Theory_Assesment  
+  o Integer Engineering_Mathematics_II_Theory_Final 
+  o Integer Engineering_Drawing_II_Practical_Assesment 
+  o Integer Engineering_Drawing_II_Practical_Final
+  o Integer Basic_Electronics_Engineering_Theory_Assesment  
+  o Integer Basic_Electronics_Engineering_Theory_Final 
+  o Integer Basic_Electronics_Engineering_Practical_Assesment 
+  o Integer Engineering_Chemistry_Theory_Assesment 
+  o Integer Engineering_Chemistry_Theory_Final 
+  o Integer Engineering_Chemistry_Practical_Assesment 
+  o Integer Engineering_Chemistry_Practical_Final 
+  o Integer Thermodynamics_And_Heat_Transfer_Theory_Assesment 
+  o Integer Thermodynamics_And_Heat_Transfer_Theory_Final
+  o Integer Thermodynamics_And_Heat_Transfer_Practical_Assesment 
+  o Integer Workshop_Technology_Theory_Assesment 
+  o Integer Workshop_Technology_Practical_Assesment 
+}
+ 
+
+asset ThirdSemesterReportCard extends ReportCard{
+
+  o ThirdSemesterMarks thirdSemesterMarks
+  o Result result
+}
+
+
+concept ThirdSemesterMarks{
+  o Integer Engineering_Mathematics_III_Theory_Assesment 
+  o Integer Engineering_Mathematics_III_Theory_Final
+  o Integer Object_Oriented_Programming_Theory_Assesment  
+  o Integer Object_Oriented_Programming_Theory_Final
+  o Integer Object_Oriented_Programming_Practical_Assesment 
+  o Integer Theory_Of_Computation_Theory_Assesment 
+  o Integer Theory_Of_Computation_Theory_Final 
+  o Integer Electric_Circuit_Theory_Theory_Assesment 
+  o Integer Electric_Circuit_Theory_Theory_Final 
+  o Integer Electric_Circuit_Theory_Practical_Assesment
+  o Integer Electronic_Devices_And_Circuits_Theory_Assesment 
+  o Integer Electronic_Devices_And_Circuits_Theory_Final 
+  o Integer Electronic_Devices_And_Circuits_Practical_Assesment 
+  o Integer Digital_Logic_Theory_Assesment 
+  o Integer Digital_Logic_Theory_Final 
+  o Integer Digital_Logic_Practical_Assesment 
+  o Integer Electromagnetics_Theory_Assesment 
+  o Integer Electromagnetics_Theory_Final 
+  o Integer Electromagnetics_Practical_Assesment 
+}
+ 
+
+asset FourthSemesterReportCard extends ReportCard{
+
+  o FourthSemesterMarks fourthSemesterMarks
+  o Result result
+}
+
+
+concept FourthSemesterMarks{
+  o Integer Applied_Mathematics_Theory_Assesment
+  o Integer Applied_Mathematics_Theory_Final  
+  o Integer Numerical_Method_Theory_Assesment 
+  o Integer Numerical_Method_Theory_Final  
+  o Integer Numerical_Method_Practical_Assesment 
+  o Integer Instrumentation_I_Theory_Assesment 
+  o Integer Instrumentation_I_Theory_Final  
+  o Integer Instrumentation_I_Practical_Assesment 
+  o Integer Electrical_Machines_Theory_Assesment 
+  o Integer Electrical_Machines_Theory_Final  
+  o Integer Electrical_Machines_Practical_Assesment 
+  o Integer Discrete_Structure_Theory_Assesment 
+  o Integer Discrete_Structure_Theory_Final 
+  o Integer Data_Structure_And_Algorithm_Theory_Assesment 
+  o Integer Data_Structure_And_Algorithm_Theory_Final 
+  o Integer Data_Structure_And_Algorithm_Practical_Assesment 
+  o Integer Microprocessor_Theory_Assesment 
+  o Integer Microprocessor_Theory_Final 
+  o Integer Microprocessor_Practical_Assesment 
+}
+
+
+asset FifthSemesterReportCard extends ReportCard{
+
+  o FifthSemesterMarks fifthSemesterMarks
+  o Result result
+} 
+
+concept FifthSemesterMarks{
+  o Integer Communication_English_Theory_Assesment
+  o Integer Communication_English_Theory_Final  
+  o Integer Communication_English_Practical_Assesment 
+  o Integer Probablity_And_Statistics_Theory_Assesment 
+  o Integer Probablity_And_Statistics_Theory_Final 
+  o Integer Software_Engineering_Theory_Assesment 
+  o Integer Software_Engineering_Theory_Final
+  o Integer Software_Engineering_Practical_Assesment 
+  o Integer Data_Communication_Theory_Assesment 
+  o Integer Data_Communication_Theory_Final  
+  o Integer Data_Communication_Practical_Assesment 
+  o Integer Computer_Organization_And_Architecture_Theory_Assesment 
+  o Integer Computer_Organization_And_Architecture_Theory_Final 
+  o Integer Computer_Organization_And_Architecture_Practical_Assesment 
+  o Integer Instrumentation_II_Theory_Assesment 
+  o Integer Instrumentation_II_Theory_Final  
+  o Integer Instrumentation_II_Practical_Assesment 
+  o Integer Computer_Graphics_Theory_Assesment 
+  o Integer Computer_Graphics_Theory_Final  
+  o Integer Computer_Graphics_Practical_Assesment 
+}
+
+
+asset SixthSemesterReportCard extends ReportCard{
+
+  o SixthSemesterMarks sixthSemesterMarks
+  o Result result
+}
+ 
+
+concept SixthSemesterMarks{
+  o Integer Engineering_Economics_Theory_Assesment  
+  o Integer Engineering_Economics_Theory_Final  
+  o Integer Object_Oriented_Analysis_And_Design_Theory_Assesment  
+  o Integer Object_Oriented_Analysis_And_Design_Theory_Final  
+  o Integer Object_Oriented_Analysis_And_Design_Practical_Assesment 
+  o Integer Database_Management_System_Theory_Assesment 
+  o Integer Database_Management_System_Theory_Final  
+  o Integer Database_Management_System_Practical_Assesment 
+  o Integer Artificial_Intellegence_Theory_Assesment 
+  o Integer Artificial_Intellegence_Theory_Final  
+  o Integer Artificial_Intellegence_Practical_Assesment 
+  o Integer Embedded_System_Theory_Assesment
+  o Integer Embedded_System_Theory_Final  
+  o Integer Embedded_System_Practical_Assesment
+  o Integer Operating_System_Theory_Assesment 
+  o Integer Operating_System_Theory_Final 
+  o Integer Operating_System_Practical_Assesment 
+  o Integer Minor_Project_Practical_Assesment 
+  o Integer Minor_Project_Practical_Final 
+}
+
+
+asset SeventhSemesterReportCard extends ReportCard{
+
+  o SeventhSemesterMarks seventhSemesterMarks
+  o Result result
+}
+ 
+
+concept SeventhSemesterMarks{
+  o Integer Organization_And_Management_Theory_Assesment 
+  o Integer Organization_And_Management_Theory_Final 
+  o Integer Energy_Environment_And_Society_Theory_Assesment 
+  o Integer Energy_Environment_And_Society_Theory_Final 
+  o Integer Project_Management_Theory_Assesment
+  o Integer Project_Management_Theory_Final  
+  o Integer Computer_Network_Theory_Assesment  
+  o Integer Computer_Network_Theory_Final  
+  o Integer Computer_Network_Practical_Assesment  
+  o Integer Distributed_System_Theory_Assesment  
+  o Integer Distributed_System_Theory_Final  
+  o Integer Distributed_System_Practical_Assesment  
+  o Integer Digital_Signal_Analysis_And_Design_Theory_Assesment  
+  o Integer Digital_Signal_Analysis_And_Design_Theory_Final  
+  o Integer Digital_Signal_Analysis_And_Design_Practical_Assesment 
+  o Integer Elective_I_Theory_Assesment 
+  o Integer Elective_I_Theory_Final 
+  o Integer Elective_I_Practical_Assesment
+  o Integer Project_Part_A_Partical_Assesment
+}
+
+asset EighthSemesterReportCard extends ReportCard{
+
+  o EighthSemesterMarks eighthSemesterMarks
+  o Result result
+}
+
+
+concept EighthSemesterMarks{
+
+  o Integer Professional_Practices_Theory_Assesment  
+  o Integer Professional_Practices_Theory_Final 
+  o Integer Information_Systems_Theory_Assesment 
+  o Integer Information_Systems_Theory_Final 
+  o Integer Internet_And_Intranet_Theory_Assesment
+  o Integer Internet_And_Intranet_Theory_Final  
+  o Integer Internet_And_Intranet_Practical_Assesment 
+  o Integer Simulation_And_Modelling_Theory_Assesment 
+  o Integer Simulation_And_Modelling_Theory_Final 
+  o Integer Simulation_And_Modelling_Practical_Assesment 
+  o Integer Elective_II_Theory_Assesment 
+  o Integer Elective_II_Theory_Final  
+  o Integer Elective_II_Practical_Assesment 
+  o Integer Elective_III_Theory_Assesment 
+  o Integer Elective_III_Theory_Final  
+  o Integer Elective_III_Practical_Assesment 
+  o Integer Project_Part_B_Practical_Assesment 
+  o Integer Project_Part_B_Practical_Final 
+
+}
+
+
+enum Result{
+  o Pass
+  o Fail 
+
+}

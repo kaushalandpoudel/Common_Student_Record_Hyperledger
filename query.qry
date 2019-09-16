@@ -1,0 +1,70 @@
+
+// query Student{
+//   description: "Returns details of specified student"
+//   statement:
+//     SELECT org.studentrecord.participants.Student 
+//     WHERE (registrationNumber == _$registrationNumber) 
+// }
+
+// query Record{
+//   description: "Returns record of speicified student"
+//   statement:
+//     SELECT org.studentrecord.record.Record
+//     WHERE (registrationId == _$registrationNumber)
+// }
+
+// query FirstSemesterReportCard{
+//   description: "Returns first semester report card of specified student"
+//   statement: 
+//     SELECT org.studentrecord.reportcard.FirstSemesterReportCard
+//     WHERE (studentDetails.registrationNumber == _$registrationNumber)
+// }
+
+// query SecondSemesterReportCard{
+//   description: "Returns second semester report card of specified student"
+//   statement: 
+//     SELECT org.studentrecord.reportcard.SecondSemesterReportCard
+//     WHERE (studentDetails.registrationNumber == _$registrationNumber)
+// }
+
+// query ThirdSemesterReportCard{
+//   description: "Returns third semester report card of specified student"
+//   statement: 
+//     SELECT org.studentrecord.reportcard.ThirdSemesterReportCard
+//     WHERE (studentDetails.registrationNumber == _$registrationNumber)
+// }
+
+// query FourthSemesterReportCard{
+//   description: "Returns fourth semester report card of specified student"
+//   statement: 
+//     SELECT org.studentrecord.reportcard.FourthSemesterReportCard
+//     WHERE (studentDetails.registrationNumber == _$registrationNumber)
+// }
+
+// query FifthSemesterReportCard{
+//   description: "Returns fifth semester report card of specified student"
+//   statement: 
+//     SELECT org.studentrecord.reportcard.FifthSemesterReportCard
+//     WHERE (studentDetails.registrationNumber == _$registrationNumber)
+// }
+
+// query SixthSemesterReportCard{
+//   description: "Returns sixth semester report card of specified student"
+//   statement: 
+//     SELECT org.studentrecord.reportcard.SixthSemesterReportCard
+//     WHERE (studentDetails.registrationNumber == _$registrationNumber)
+// }
+
+// query SeventhSemesterReportCard{
+//   description: "Returns seventh semester report card of specified student"
+//   statement: 
+//     SELECT org.studentrecord.reportcard.SeventhSemesterReportCard
+//     WHERE (studentDetails.registrationNumber == _$registrationNumber)
+// }
+
+// query EighthSemesterReportCard{
+//   description: "Returns eighth semester report card of specified student"
+//   statement: 
+//     SELECT org.studentrecord.reportcard.EighthSemesterReportCard
+//     WHERE (studentDetails.registrationNumber == _$registrationNumber)
+// }

@@ -1,0 +1,51 @@
+
+namespace org.studentrecord.record
+
+//Root identification field
+asset Record identified by registrationId{
+  o String registrationId
+  o StudentDetails studentDetails
+  
+  
+  o String firstSemesterResult        optional
+  o String firstSemesterPercentage    optional
+  o String[] firstSemesterReportId    optional
+  
+  o String secondSemesterResult       optional
+  o String secondSemesterPercentage   optional
+  o String[] secondSemesterReportId   optional
+  
+  o String thirdSemesterResult        optional
+  o String thirdSemesterPercentage    optional
+  o String[] thirdSemesterReportId    optional
+  
+  o String fourthSemesterResult       optional
+  o String fourthSemesterPercentage   optional
+  o String[] fourthSemesterReportId   optional
+  
+  o String fifthSemesterResult        optional
+  o String fifthSemesterPercentage    optional
+  o String[] fifthSemesterReportId    optional
+  
+  o String sixthSemesterResult        optional
+  o String sixthSemesterPercentage    optional
+  o String[] sixthSemesterReportId    optional
+  
+  o String seventhSemesterResult      optional
+  o String seventhSemesterPercentage  optional
+  o String[] seventhSemesterReportId  optional
+  
+  o String eighthSemesterResult       optional
+  o String eighthSemesterPercentage   optional
+  o String[] eighthSemesterReportId   optional
+  
+}
+
+concept StudentDetails{
+  o String firstName 
+  o String lastName
+  o String faculty
+  o String enrolledUniversity
+  o String enrolledCollege
+}
+
